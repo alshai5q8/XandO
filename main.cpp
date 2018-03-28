@@ -55,7 +55,7 @@ int main()
 
     if(turn == 'X')
     {
-    turn = 0;
+    turn = O;
     }
     else if( turn == 'O')
     {
