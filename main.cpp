@@ -49,6 +49,19 @@ int main()
     //1-C.  In any other case, then...
     //1-C-1.  turn should be assigned the value 'X'
     
+    else 
+    {
+    board[row][column] = turn;
+
+    if(turn == 'X')
+    {
+    turn = 0;
+    }
+    else if( turn == 'O')
+    {
+    turn = X;
+    }
+    }
     cout<<"\nBOARD\n-----\n";
     //TODO: Print the current board
     //Outline
@@ -58,7 +71,16 @@ int main()
     //1-A-2. Display a space
     //1-B. Display an newline to move to the next row of the board
     
-  }while( playing );
+    for(int r = 0; r < 3; r++)
+    {
+    for(int c = 0; c < 3; c++)
+    {
+    cout<<board[r][c]<<" ";
+    }
+cout<<"\n";
+}
+
+  }while( row != -1 && column != -1 );
 
   cout<<"Goodbye!\n";
 
