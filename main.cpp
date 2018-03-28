@@ -1,4 +1,4 @@
-//Author:
+//Author: Saleh Alshaikh
 #include <iostream>
 
 using namespace std;
